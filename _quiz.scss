@@ -1,0 +1,35 @@
+
+.quiz{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns:  repeat(3,1fr);
+  background-color: pink;
+
+  height: 100%;
+
+}
+
+.quiz__question{
+
+grid-column-start: 2;
+}
+
+.quiz__image{
+grid-row-start: 2;
+grid-column-start: 2;
+}
+
+.quiz__solutions{
+  grid-row-start: 3;
+  grid-column-start: 2;
+}
+
+
+@media screen and (min-width: 768px) {
+  .display{
+    width: 50%;
+    height: 40%;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+  }
